@@ -1,13 +1,15 @@
-let numeros = [3, 5 , 8 , 10];
-let soma = 0;
+const numeros = [10, 20 , 30 , 40 , 50 , 60];
 
-function calcularMedia(numeros){
-    for(i=0;i>=numeros.length;i++){
+function calcularMedia(numeros) {
+    let soma = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
         soma += numeros[i];
     }
-    var media = soma / numeros.length;
 
+    const media = soma / numeros.length;
     return media;
 }
-calcularMedia(numeros);
-console.log(calcularMedia)
+
+const resultado = calcularMedia(numeros);
+console.log(resultado);
